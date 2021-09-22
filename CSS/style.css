@@ -1,0 +1,135 @@
+body {
+  background-color: black;
+  margin: 60px 200px 0px 200px;
+  font-family: "Cabin", sans-serif;
+}
+
+/* Encabezado */
+
+.logo {
+  /*Contenedor de titulo principal*/
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logoimagen {
+  width: 400px;
+  margin: auto;
+  display: block;
+}
+
+nav {
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+.barradenavegacion {
+  display: inline-flex;
+  background-color: black;
+  /* quitar las viñeras de los elementos de la lista*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion {
+  padding: 10px 60px 10px 60px;
+}
+
+.navegacion:hover {
+  background-color: darkmagenta;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+/* Parte 1 - Parallax */
+
+.parallax {
+  /*Contenedor*/
+
+  background-image: url(../Imagenes/Coldplay\ Poster.jpg);
+  /* Establece altura minima de los elementos del bloque */
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* Fondo estatico */
+  background-attachment: fixed;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.tituloparallax h2 {
+  /* font-size es tamaño del texto */
+  font-size: 30px;
+  color: white;
+  /* font-weight es el grosor o negrilla del texto */
+  font-weight: 700;
+  text-align: center;
+}
+
+.parrafoparallax {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.parrafoparallax:hover {
+  background-color: greenyellow;
+  opacity: 0.7;
+}
+
+.parrafoparallax a {
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+  padding: 1px 30px;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Seccion 3 - info  */
+
+.informacion {
+  display: inline-flex;
+}
+
+.informacion p{
+    color: white;
+   /* Coloca el maximo ancho a un elemento admeas impide que el valor de widht sea mas largo */
+  max-width: 50%;
+  margin: 0;
+  /*  Propiedad felxible - La alineacion de un elemento dentro del contenedor */
+  align-self: center;
+  padding-left: 50px;
+  /* establece la altura entre lineas de parrafo */
+  line-height: 23px;
+}
+
+.titulocoldplay{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.titulocoldplay2{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.informacion img{
+    max-width: 50%;
+    /* El navegador calcula y selecciona una altura */
+    height: auto;
+    padding: 0px 20px 0px 20px;
+
+}
